@@ -12,15 +12,15 @@
 </head>
 <body>
 
-	<div id="header">
-		<!-- shopping list title -->
+	<header>
+		<!-- SHOPPING LIST TITLE -->
 		<h1>Shopping List</h1>
 		
-	</div>
+	</header>
 
-	<div id="section">
+	<section>
 		
-		<!-- input fields: quantity, product, price -->
+		<!-- INPUT FIELDS: quantity, product, price -->
 		
 		<div id="input-fields">
 			<div id="quantity">
@@ -34,7 +34,7 @@
 			</div>
 
 			<div id="price">
-				<h3>Price<h3>
+				<h3>Price</h3>
 				<input type="text" name="price" id="product-price">
 			</div>
 
@@ -43,17 +43,30 @@
 			</div>
 		</div> <!-- END OF INPUT-FIELDS -->
 		
-		<!-- item list -->
+		<div id="lists">
+		<!-- ITEM LIST -->
+			<div id="item-list-left">
+				<ul class="quantity-list">
 
-		<div id="item-list">
-			<ol class="product-list">
-				
-			</ol>
-		</div>
-	</div>
+				</ul>
+			</div>
 
-	<div id="footer">
-		<!-- item list total -->
+			<div id="item-list">
+				<ul class="product-list">
+						
+				</ul>
+			</div>
+
+			<div id="item-list-right">
+				<ul class="price-list">
+
+				</ul>
+			</div>
+		</div> <!-- END OF LISTS -->
+	</section>
+
+	<footer>
+		<!-- ITEM LIST TOTAL -->
 		<div id="list-total">
 			<span></span>
 		</div>
@@ -61,15 +74,17 @@
 			<h3>Quantity total</h3>
 		</div>
 
-		<!-- price total -->
-		<div id="price-total">
+		<div id="holder">
+		</div>
 
+		<!-- PRICE TOTAL -->
+		<div id="price-total">
+			<span></span>
 		</div>
 		<div id="price-total-title">
 			<h3>Price Total &#36;</h3>
 		</div>
-
-	</div>
+	</footer>
 	
 </body>
 </html>

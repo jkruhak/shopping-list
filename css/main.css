@@ -1,28 +1,30 @@
+body, header, section, footer, #input-fields, #quantity, #product-quantity, #product,
+#product-name, #price, #product-price, #lists, #item-list-left, #item-list, #item-list-right, 
+#add, #add button, #list-total, #price-total, #list-total-title, #price-total-title,
+#holder 
+{
+	position: relative;
+	/*border: 1px solid black; */
+}
+
 body {
-	position: relative;
-
+	display: block;
+	margin: 0 auto;
 }
 
-#header, #section, #footer, #input-fields, #quantity, #product-quantity, #product,
-#product-name, #price, #product-price, #item-list, #add, #add button, #list-total,
-#price-total, #quantity-title, #price-title {
-	position: relative;
-	border: 1px solid black;
-}
-
-#header {
+header {
 	margin: 0 auto;
 	width: 600px;
 	height: 150px;
 }
 
-#section {
+section {
 	margin: 0 auto;
 	width: 800px;
 	height: 600px;
 }
 
-#footer {
+footer {
 	margin: 0 auto;
 	width: 800px;
 	height: 100px;
@@ -45,7 +47,6 @@ h3 {
 	margin: 0 auto;
 	width: 540px;
 	height: 50px;
-
 }
 
 #quantity {
@@ -84,6 +85,7 @@ h3 {
 
 #product-price {
 	margin-top: 2px;
+	font-family: cursive;
 	width: 60px;
 	height: 20px;
 }
@@ -102,12 +104,38 @@ h3 {
 	color: blue;
 }
 
-#item-list {
+#lists {
 	margin: 0 auto;
 	margin-top: 49px;
-	display: block;
+	width: 540px;
+	height: 500px;
+}
+
+#item-list {
+	display: inline-block;
+	margin: 0 auto;
+	margin-left: 5px;
 	width: 300px;
 	height: 500px;
+}
+
+#item-list-left {
+	display: inline-block;
+	float: left;
+	width: 110px;
+	height: 500px;
+}
+
+#item-list-right {
+	display: inline-block;
+	float: right;
+	width: 110px;
+	height: 500px;
+}
+
+.quantity-list {
+	font-family: cursive;
+	font-size: 1.2em;
 }
 
 .product-list {
@@ -115,17 +143,25 @@ h3 {
 	font-size: 1.2em;
 }
 
-.product-list li {
-	margin: 0 0 10px 0;
+.price-list {
+	font-family: cursive;
+	font-size: 1.2em;
 }
 
+.quantity-list li, .product-list li, .price-list li {
+	margin: 0 0 10px 0;
+}
+/* ~~~~~ FOOTER ~~~~~ */
 #list-total {
 	float: left;
+	
+	
 	width: 60px;
 	height: 50px;
 }
 
 #list-total-title {
+
 	float: left;
 	width: 120px;
 	height: 50px;
@@ -136,16 +172,21 @@ h3 {
 	margin-top: 15px;
 }
 
+
 #price-total {
+
 	float: right;
+
 	width: 60px;
 	height: 50px;
 }
 
 #price-total-title {
+	
 	float: right;
 	width: 120px;
 	height: 50px;
+
 	text-align: center;
 }
 
