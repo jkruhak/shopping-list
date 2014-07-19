@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping List</title>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+
+	<div id="header">
+		<!-- shopping list title -->
+		<h1>Shopping List</h1>
+		
+	</div>
+
+	<div id="section">
+		
+		<!-- input fields: quantity, product, price -->
+		
+		<div id="input-fields">
+			<div id="quantity">
+				<h3>Quantity</h3>
+				<input type="text" name="quantity" id="product-quantity">
+			</div>
+
+			<div id="product">
+				<h3>Item</h3>
+				<input type="text" name="product" id="product-name">
+			</div>
+
+			<div id="price">
+				<h3>Price<h3>
+				<input type="text" name="price" id="product-price">
+			</div>
+
+			<div id="add">
+				<button>ADD</button>
+			</div>
+		</div> <!-- END OF INPUT-FIELDS -->
+		
+		<!-- item list -->
+
+		<div id="item-list">
+			<ol class="product-list">
+				
+			</ol>
+		</div>
+	</div>
+
+	<div id="footer">
+		<!-- item list total -->
+		<div id="list-total">
+			<span></span>
+		</div>
+		<div id="list-total-title">
+			<h3>Quantity total</h3>
+		</div>
+
+		<!-- price total -->
+		<div id="price-total">
+
+		</div>
+		<div id="price-total-title">
+			<h3>Price Total &#36;</h3>
+		</div>
+
+	</div>
+	
+</body>
+</html>

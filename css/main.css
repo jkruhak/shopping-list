@@ -1,0 +1,154 @@
+body {
+	position: relative;
+
+}
+
+#header, #section, #footer, #input-fields, #quantity, #product-quantity, #product,
+#product-name, #price, #product-price, #item-list, #add, #add button, #list-total,
+#price-total, #quantity-title, #price-title {
+	position: relative;
+	border: 1px solid black;
+}
+
+#header {
+	margin: 0 auto;
+	width: 600px;
+	height: 150px;
+}
+
+#section {
+	margin: 0 auto;
+	width: 800px;
+	height: 600px;
+}
+
+#footer {
+	margin: 0 auto;
+	width: 800px;
+	height: 100px;
+}
+
+h1 {
+	text-align: center;
+	font-family: cursive;
+	font-size: 5em;
+	padding-top: 30px;
+	color: blue;
+}
+
+h3 {
+	font-family: cursive;
+	color: blue;
+}
+
+#input-fields {
+	margin: 0 auto;
+	width: 540px;
+	height: 50px;
+
+}
+
+#quantity {
+	float: left;
+	width: 80px;
+	height: 50px;
+	text-align: center;
+}
+
+#product-quantity {
+	margin-top: 2px;
+	width: 60px;
+	height: 20px;
+}
+
+#product {
+	float: left;
+	width: 320px;
+	height: 50px;
+	text-align: center;
+}
+
+#product-name {
+	margin-top: 2px;
+	font-family: cursive;
+	width: 300px;
+	height: 20px;
+}
+
+#price {
+	float: left;
+	width: 80px;
+	height: 50px;
+	text-align: center;
+}
+
+#product-price {
+	margin-top: 2px;
+	width: 60px;
+	height: 20px;
+}
+
+#add {
+	float: left;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+}
+
+#add button {
+	margin-top: 20px;
+	width: 40px;
+	height: 20px;
+	color: blue;
+}
+
+#item-list {
+	margin: 0 auto;
+	margin-top: 49px;
+	display: block;
+	width: 300px;
+	height: 500px;
+}
+
+.product-list {
+	font-family: cursive;
+	font-size: 1.2em;
+}
+
+.product-list li {
+	margin: 0 0 10px 0;
+}
+
+#list-total {
+	float: left;
+	width: 60px;
+	height: 50px;
+}
+
+#list-total-title {
+	float: left;
+	width: 120px;
+	height: 50px;
+	text-align: center;
+}
+
+#list-total-title h3 {
+	margin-top: 15px;
+}
+
+#price-total {
+	float: right;
+	width: 60px;
+	height: 50px;
+}
+
+#price-total-title {
+	float: right;
+	width: 120px;
+	height: 50px;
+	text-align: center;
+}
+
+#price-total-title h3 {
+	margin-top: 15px;
+}
