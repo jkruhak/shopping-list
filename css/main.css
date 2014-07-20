@@ -107,14 +107,15 @@ h3 {
 #lists {
 	margin: 0 auto;
 	margin-top: 49px;
-	width: 540px;
+	width: 560px;
 	height: 500px;
+	overflow-y: scroll;
 }
 
 #item-list {
 	display: inline-block;
 	margin: 0 auto;
-	margin-left: 5px;
+	margin-left: 10px;
 	width: 300px;
 	height: 500px;
 }
@@ -151,7 +152,9 @@ h3 {
 .quantity-list li, .product-list li, .price-list li {
 	margin: 0 0 10px 0;
 }
+
 /* ~~~~~ FOOTER ~~~~~ */
+
 #list-total {
 	float: left;
 	
@@ -174,9 +177,7 @@ h3 {
 
 
 #price-total {
-
 	float: right;
-
 	width: 60px;
 	height: 50px;
 }
@@ -192,4 +193,11 @@ h3 {
 
 #price-total-title h3 {
 	margin-top: 15px;
+}
+
+/* ~~~~~ JQUERY CLASSES ~~~~~ */
+
+.gotit {
+	text-decoration: line-through;
+	color: red;
 }
