@@ -9,14 +9,22 @@
 
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
+
 </head>
 <body>
 
 	<header>
 
 		<!-- SHOPPING LIST TITLE -->
+		<div id="title">
+			<h1>Shopping List</h1>
+		</div>
 
-		<h1>Shopping List</h1>
+		<div id="instructions">
+			<p>INSTRUCTIONS:</p>
+			<p>Click on item to mark as complete</p>
+			<p>Double click on item to remove from list</p>
+		</div>
 
 	</header>
 
@@ -37,26 +45,25 @@
 
 			<div id="price">
 				<h3>Price</h3>
-				<input type="text" name="price" id="product-price" value="0.00">
+				<input type="text" name="price" class="product-price" value="0.00">
 			</div>
 
 			<div id="add">
 				<button>ADD</button>
 			</div>
+
+
 		</div> <!-- END OF INPUT-FIELDS -->
 		
 		<div id="lists">
 			<!-- ITEM LIST -->
 			<div id="item-list-left">
 				<ul class="quantity-list">
-
+					
 				</ul>
 			</div>
 
 			<div id="item-list">
-				<div class="buttondelete">
-					<button>DELETE</button>
-				</div>
 				<ul class="product-list">
 						
 				</ul>
@@ -84,7 +91,7 @@
 
 		<!-- PRICE TOTAL -->
 		<div id="price-total">
-			<span></span>
+			<input type="text" id="sum" disabled />
 		</div>
 		<div id="price-total-title">
 			<h3>Price Total &#36;</h3>
