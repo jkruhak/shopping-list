@@ -1,10 +1,10 @@
-body, header, section, footer, #title, #instructions, #input-fields, #quantity, #product-quantity, #product,
+body, header, section, footer, #title, #input-fields, #quantity, #product-quantity, #product,
 #product-name, #price, .product-price, #lists, #item-list-left, #item-list, #item-list-right, 
 #add, #add button, #list-total, #price-total, #list-total-title, #price-total-title,
 #holder, #remove, #complete
 {
 	position: relative;
-/*	border: 1px solid black;*/
+/*	border: 1px solid black; */
 }
 
 body {
@@ -34,20 +34,6 @@ footer {
 	margin: 0 auto;
 	width: 600px;
 	height: 150px;
-}
-
-#instructions {
-	display: none;
-	margin: 0 auto;
-	width: 600px;
-	height: 150px;
-}
-
-#instructions p {
-	text-align: center;
-	font-family: cursive;
-	font-size: 1em;
-	padding-top: 20px;
 }
 
 h1 {
@@ -175,8 +161,6 @@ h3 {
 	text-align: center;
 	border: none;
 }
-
-/* ~~~~~ FOOTER ~~~~~ */
 
 #list-total {
 	float: left;

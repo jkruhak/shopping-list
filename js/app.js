@@ -41,6 +41,7 @@ $(document).ready(function() {
 		}
 	});
 
+	//remove item when 'X' button clicked
 	function removeItem() {
 		var quantxed = $('#lists').find('#itemquantity');
 		$(quantxed).remove();
@@ -48,12 +49,12 @@ $(document).ready(function() {
 		$(xed).remove();
 		var pricexed = $('#lists').find('#itemprice');
 		$(pricexed).remove();
+		
 	}
 
-	//remove item when 'X' button clicked
-	$('#lists').on('click', '#remove', removeItem); 
+	$('#lists').on('click', '#remove', removeItem);
 
-	//strikethrough when item is clicked
+	//strikethrough when 'V' button	 clicked
 	function completedItem() {
 		var quantxed = $('#lists').find('#itemquantity');
 		$(quantxed).toggleClass('gotit');
@@ -65,18 +66,6 @@ $(document).ready(function() {
 
 	$('#lists').on('click', '#complete', completedItem);
 
-	//count number of items in list as each added
-	 	
-
-	//Instructions in header
-	$('header').on('mouseover', function() {
-		$('#title').hide();
-		$('#instructions').show();
-	});
-
-	$('header').on('mouseleave', function() {
-		$('#instructions').hide();
-		$('#title').show();
-	});	
+	
 
 })
