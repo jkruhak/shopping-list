@@ -1,15 +1,16 @@
-body, header, section, footer, #title, #input-fields, #quantity, #product-quantity, #product,
-#product-name, #price, .product-price, #lists, #item-list-left, #item-list, #item-list-right, 
-#add, #add button, #list-total, #price-total, #list-total-title, #price-total-title,
+body, header, section, footer, #title, #inputFields, #quantity, #productQuantity, #product,
+#productName, #price, #productPrice, #lists, #itemListLeft, #itemList, #itemListRight, 
+#add, #add button, #listTotal, #priceTotal, #listTotalTitle, #priceTotalTitle,
 #holder, #remove, #complete
 {
 	position: relative;
-/*	border: 1px solid black; */
+	/*border: 1px solid black;*/
 }
 
 body {
 	display: block;
 	margin: 0 auto;
+	font-family: cursive;
 }
 
 header {
@@ -49,7 +50,7 @@ h3 {
 	color: blue;
 }
 
-#input-fields {
+#inputFields {
 	margin: 0 auto;
 	width: 540px;
 	height: 50px;
@@ -62,7 +63,7 @@ h3 {
 	text-align: center;
 }
 
-#product-quantity {
+#productQuantity {
 	margin-top: 2px;
 	width: 60px;
 	height: 20px;
@@ -75,7 +76,7 @@ h3 {
 	text-align: center;
 }
 
-#product-name {
+#productName {
 	margin-top: 2px;
 	font-family: cursive;
 	width: 300px;
@@ -89,7 +90,7 @@ h3 {
 	text-align: center;
 }
 
-.product-price {
+#productPrice {
 	margin-top: 2px;
 	font-family: cursive;
 	width: 60px;
@@ -118,33 +119,36 @@ h3 {
 	overflow-y: scroll;
 }
 
-#item-list {
+#itemList {
 	display: inline-block;
 	margin: 0 auto;
 	margin-left: 10px;
-	width: 350px;
+	width: 450px;
 }
 
-#item-list-left {
+#itemListLeft, #itemListRight {
 	display: inline-block;
+	width: 50px;
+}
+
+#itemListLeft {
 	float: left;
-	width: 100px;
 }
 
-#item-list-right {
-	display: inline-block;
+#itemListRight {
 	float: right;
-	width: 100px;
 }
 
-.product-list li, .price-list li {
+#productList li, #priceList li {
 	margin: 0 0 10px 0;
 	font-family: cursive;
 	font-size: 1.2em;
 }
 
-.quantity-list li {
+#quantityList li {
 	margin: 0 0 4.3px 0;
+	font-family: cursive;
+	font-size: 1.2em;
 }
 
 #remove {	
@@ -162,37 +166,37 @@ h3 {
 	border: none;
 }
 
-#list-total {
+#listTotal {
 	float: left;
 	width: 60px;
 	height: 50px;
 }
 
-#list-total-title {
+#listTotalTitle {
 	float: left;
 	width: 120px;
 	height: 50px;
 	text-align: center;
 }
 
-#list-total-title h3 {
+#listTotalTitle h3 {
 	margin-top: 15px;
 }
 
-#price-total {
+#priceTotal {
 	float: right;
 	width: 60px;
 	height: 50px;
 }
 
-#price-total-title {
+#priceTotalTitle {
 	float: right;
 	width: 120px;
 	height: 50px;
 	text-align: center;
 }
 
-#price-total-title h3 {
+#priceTotalTitle h3 {
 	margin-top: 15px;
 }
 
@@ -200,5 +204,17 @@ h3 {
 
 .gotit {
 	text-decoration: line-through;
-	color: red;
+	color: blue;
+}
+
+#instructions {
+	display: none;
+	margin: 0 auto;
+	width: 600px;
+	height: 150px;
+	text-align: center;
+}
+
+#instructions p {
+	padding-top: 25px;
 }
