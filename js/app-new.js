@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	function addToQuantity() {
 		var inputquantity = +$('#productQuantity').val();
-		$('#productQuantity').val('1');
+		//$('#productQuantity').val('5');
 		return inputquantity;
 	}
 
@@ -27,7 +27,22 @@ $(document).ready(function() {
 
 		$('#productList').append('<li>'+quantityAdd+ "x " + itemAdd + "&#32;" + " = " + " $" + total+'</li>');
 	}
+	
+	//quantity total
+/*	function quantityTotal() {
+		
+		var total = 0;
+		$('#productQuantity').each(function() {
+//		$('#quantityList li').each(function() {
+			total += parseFloat($(this).val());
+		});
 
+		$('#listSum').val(total);
+	}
+
+	//add to list total using 'add' button
+	$('#listTotalTitle').on('click', '#itemCount', quantityTotal);
+*/
 	//add to list using 'add' button
 	$('#inputFields').on('click', '#addButton', itemsAddedToList);
 

@@ -7,7 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
-	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<!--<script src="http://code.jquery.com/jquery.min.js"></script>-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="js/app-new.js"></script>
 	
 </head>
@@ -79,10 +80,11 @@
 	<footer>
 		<!-- ITEM LIST TOTAL -->
 		<div id="listTotal">
-			<span></span>
+			<input type="text" id="listSum" disabled />
 		</div>
 		<div id="listTotalTitle">
 			<h3>Quantity total</h3>
+			<input type="submit" id="itemCount" value="Count"/>
 		</div>
 
 		<div id="holder">
@@ -90,7 +92,7 @@
 
 		<!-- PRICE TOTAL -->
 		<div id="priceTotal">
-			
+			<input type="text" id="priceSum" disabled />
 		</div>
 		<div id="priceTotalTitle">
 			<h3>Price Total &#36;</h3>
